@@ -281,11 +281,11 @@ private extension SnapshotStructure {
     }
 
     func specifiedItemIsNotFound(_ id: ItemID, file: StaticString, line: UInt) -> Never {
-        universalError("Specified item\(id) is not found.", file: file, line: line)
+        universalError("Specified item \(id) is not found.", file: file, line: line)
     }
 
     func specifiedSectionIsNotFound(_ id: SectionID, file: StaticString, line: UInt) -> Never {
-        universalError("Specified section\(id) is not found.", file: file, line: line)
+        universalError("Specified section \(id) is not found.", file: file, line: line)
     }
 
     func thereAreCurrentlyNoSections(file: StaticString, line: UInt) -> Never {
